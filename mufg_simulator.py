@@ -19,7 +19,7 @@ def iterate_n_days(n, initial_items):
   return current_items
 
 total_items_accumulated = 0
-for y in range(1,trials):
+for y in range(trials):
   total_items_accumulated += iterate_n_days(iteration_days,initial_items)
 
 average_items_accumulated = total_items_accumulated / trials 
