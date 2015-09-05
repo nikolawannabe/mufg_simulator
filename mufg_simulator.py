@@ -9,7 +9,7 @@ trials = 1000
 
 def iterate_n_days(n, initial_items):
   current_items = initial_items 
-  for x in range(1, n):
+  for x in range(n):
       new_items = 0;
       for y in range (1,current_items):
           if (random.random() < 0.01):
