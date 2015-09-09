@@ -5,9 +5,9 @@ import random
 
 def iterate_n_days(n, initial_items):
   current_items = initial_items 
-  for x in range(1, n):
+  for x in range(n):
       new_items = 0;
-      for y in range (1,current_items):
+      for y in range (current_items):
           if (random.random() < 0.01):
               new_items =new_items +1
       current_items=current_items+new_items;
@@ -24,8 +24,8 @@ def how_many_in_n_days():
 
 def how_many_in_n_days(initial_items, iteration_days, trials):
   total_items_accumulated = 0
-  for y in range(1,trials):
-    total_items_accumulated += iterate_n_days(iteration_days,initial_items)
+  for y in range(trials):
+   total_items_accumulated += iterate_n_days(iteration_days,initial_items)
 
   average_items_accumulated = total_items_accumulated / trials
   return average_items_accumulated
