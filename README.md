@@ -13,7 +13,7 @@ This assumes that you are moving items to new MUFG capsules when the capsule rea
 ```
 
 ```
-ctalbot@frankland ~/src/ingress/mufg_simulator  (master)  ❄ python mufg_simulator.py 
+$ python mufg_simulator.py 
 Calculate items gained in N days (calcitems) or Run some tests about how whether it's better to use multiple capsules or one (testcapsules): testcapsules
 how many days to wait (default 90) 
 how many items altogether? (default 24) 
